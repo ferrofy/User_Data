@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: #00c853;
 }
+
 @keyframes Moving_Color_Header {
     0% {
         background-position: 0% 50%;
@@ -68,7 +69,6 @@ a {
     animation-play-state: paused;
 }
 
-
 .Content {
     color: #eceff1;
     font-size: small;
@@ -77,9 +77,62 @@ a {
     text-align: left;
     padding: 20px;
     padding-left: 50px;
+    background: none;
+    backdrop-filter: blur(90%);
+    transition: backdrop-filter 3s ease;
 }
 
-#H1_Header {
-    color: #000000;
-    font-weight: bold;
+.Content.no-blur {
+    backdrop-filter: blur(0%);
+}
+
+#content-placeholder {
+    text-align: center;
+}
+
+#password-input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #FFFFFF;
+    background-color: #000000;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#password-input::placeholder {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#toggle-password {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    margin-left: -30px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px; /* Profile photo with a circle radius */
+    margin-right: 20px;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
