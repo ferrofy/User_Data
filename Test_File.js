@@ -6,7 +6,7 @@ const userSpecificPasswords = {
     "uci": "user_uci",
     "akx": "user_akx",
 };
-
+ 
 function getPasswordFromURL() {
     const url = window.location.pathname;
     const userName = url.split("/").pop().toLowerCase();
