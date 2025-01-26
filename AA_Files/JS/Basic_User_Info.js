@@ -9,7 +9,7 @@ function startTimer() {
 function updateTimeSpent() {
     const currentTime = new Date().getTime();
     const timeSpent = Math.floor((currentTime - startTime) / 1000);
-    document.getElementById('timeSpent').innerText = `Time Invested - ${timeSpent} sec`;
+    document.getElementById('timeSpent').innerText = `Time Spent On This Page -  ${timeSpent} sec`;
 }
 
 function stopTimer() {
